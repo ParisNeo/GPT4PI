@@ -10,7 +10,6 @@ def create_model(self):
     return model.Model(
         ggml_model=f"./models/{self.args.model}", 
         n_ctx=512, 
-        seed=self.args.seed,
         )
 def callback(text):
     print(text)
